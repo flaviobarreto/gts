@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Technology Switches</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-EX5zjyTRQ/9nc+pFwAgcW5Qc8m0d88yXmQa1t6lBRtY1DgxxpTcHlLnHfhlgL7ozFiL6IwZ61+fHAs3mPA4zGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Global Technology Switches</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Chama Global Technology Switches é especializada em soluções avançadas de switches e tecnologias de rede.</p>
+        </div>
+    </section>
+
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Switches de Rede</h3>
+                    <p>Desenvolvimento e fornecimento de switches de rede de última geração.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cloud-network"></i>
+                    <h3>Hospedagem na Nuvem</h3>
+                    <p>Soluções de hospedagem em nuvem escaláveis e seguras.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança de Rede</h3>
+                    <p>Implementação de protocolos avançados para segurança de redes corporativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="section">
+        <div class="container">
+            <h2>Recursos</h2>
+            <ul class="features">
+                <li><i class="fas fa-check"></i> Alta Performance</li>
+                <li><i class="fas fa-check"></i> Compatibilidade Global</li>
+                <li><i class="fas fa-check"></i> Suporte Técnico 24/7</li>
+                <li><i class="fas fa-check"></i> Integração de Sistemas</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chama Global Technology Switches. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.service {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.features li {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px;
+}
+
+.features li i {
+    margin-right: 10px;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555; /* Cor de destaque ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin: 20px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+        
+    </script>
+</body>
+</html>
