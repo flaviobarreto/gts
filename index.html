@@ -1,288 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Switches Technology</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-EX5zjyTRQ/9nc+pFwAgcW5Qc8m0d88yXmQa1t6lBRtY1DgxxpTcHlLnHfhlgL7ozFiL6IwZ61+fHAs3mPA4zGg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Global Switechs Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .hero-bg {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-up {
+            animation: slideUp 0.75s ease-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .scale-hover:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+<body class="font-sans antialiased bg-gray-100">
 
-<body>
-    <header>
-        <div class="container">
-            <h1>Global Switches Technology </h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Header -->
+    <header class="bg-black text-white">
+        <nav class="container mx-auto flex justify-between items-center py-6">
+            <a href="#" class="text-2xl font-bold">Global Switechs Technology</a>
+            <ul class="flex space-x-6">
+                <li><a href="#sobre" class="hover:text-yellow-400 transition">Sobre</a></li>
+                <li><a href="#servicos" class="hover:text-yellow-400 transition">Serviços</a></li>
+                <li><a href="#contato" class="hover:text-yellow-400 transition">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Global Switches Technology é especializada no desenvolvimento e implementação personalizada de sistemas.</p>
+    <!-- Hero Section -->
+    <section class="hero-bg text-center text-black h-screen flex items-center justify-center bg-fixed bg-cover">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Transformando Tecnologia em Soluções</h1>
+            <p class="text-lg md:text-xl mb-8 fade-in">Implantação, Integração e Modernização de Sistemas</p>
+            <a href="#contato" class="bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition">Entre em Contato</a>
         </div>
     </section>
 
-    <section id="servicos" class="section">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="services">
-                <div class="service">
-                    <div class="emoji">💻</div>
-                    <h3>Desenvolvimento de Sistemas</h3>
-                    <p>Desenvolvimento personalizado de sistemas para atender às necessidades específicas de cada cliente.</p>
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4 slide-up">Sobre Nós</h2>
+            <p class="text-lg text-gray-700">A Global Switechs Technology é uma startup focada em oferecer soluções de TI inovadoras. Desde a implantação e integração de APIs até a modernização de sistemas legados e microserviços, nossa missão é transformar a tecnologia em vantagens reais para o seu negócio.</p>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 slide-up">Nossos Serviços</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
+                        <div class="text-4xl mb-4 text-yellow-500">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Desenvolvimento de Sistemas</h3>
+                        <p class="text-gray-700">Criação de sistemas personalizados para atender às necessidades específicas de cada cliente.</p>
+                    </div>
                 </div>
-                <div class="service">
-                    <div class="emoji">🔧</div>
-                    <h3>Implementação de Sistemas</h3>
-                    <p>Implementação eficiente e suporte contínuo para garantir a integração perfeita dos sistemas em seu ambiente.</p>
+                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
+                        <div class="text-4xl mb-4 text-yellow-500">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Integração de APIs</h3>
+                        <p class="text-gray-700">Integração eficiente de APIs para otimizar processos e melhorar a conectividade entre sistemas.</p>
+                    </div>
                 </div>
-                <div class="service">
-                    <div class="emoji">🛠️</div>
-                    <h3>Suporte de Sistemas</h3>
-                    <p>Suporte técnico dedicado para manter seus sistemas funcionando de forma eficaz e segura.</p>
+                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
+                        <div class="text-4xl mb-4 text-yellow-500">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Melhoria de Performance</h3>
+                        <p class="text-gray-700">Otimização de sistemas para garantir o melhor desempenho e eficiência operacional.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
+                        <div class="text-4xl mb-4 text-yellow-500">
+                            <i class="fas fa-refresh"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Modernização de Legado</h3>
+                        <p class="text-gray-700">Atualização e modernização de sistemas legados para atender às demandas tecnológicas atuais.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="recursos" class="section">
-        <div class="container">
-            <h2>Recursos</h2>
-            <ul class="features">
-                <li><i class="fas fa-check"></i> Desenvolvimento Personalizado</li>
-                <li><i class="fas fa-check"></i> Implementação Eficiente</li>
-                <li><i class="fas fa-check"></i> Suporte Contínuo</li>
-                <li><i class="fas fa-check"></i> Integração de Sistemas</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contato" class="section">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form action="#" method="POST">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>
-                <button type="submit">Enviar Mensagem</button>
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
+            <p class="text-lg text-gray-700 mb-8">Estamos aqui para ajudar você a transformar seus desafios em oportunidades. Preencha o formulário abaixo e entraremos em contato.</p>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full px-4 py-2 border rounded-lg border-gray-300">
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Seu E-mail" required class="w-full px-4 py-2 border rounded-lg border-gray-300">
+                </div>
+                <div class="mb-4">
+                    <textarea name="mensagem" placeholder="Sua Mensagem" rows="4" class="w-full px-4 py-2 border rounded-lg border-gray-300"></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition">Enviar Mensagem</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Global Switches Technology. Todos os direitos reservados.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 text-center">
+        <p>&copy; 2024 Global Switechs Technology. Todos os direitos reservados.</p>
     </footer>
 
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffd700;
-            /* Cor de destaque ao passar o mouse */
-        }
-
-        .section {
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        .section p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .service {
-            flex: 1 1 250px;
-            padding: 20px;
-            margin: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .service:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .emoji {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        .service h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .features {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .features li {
-            font-size: 1.2rem;
-            color: #666;
-            margin: 10px;
-        }
-
-        .features li i {
-            margin-right: 10px;
-            color: #333;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        form input,
-        form textarea {
-            width: calc(100% - 20px);
-            margin-bottom: 20px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        form button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: #555;
-            /* Cor de destaque ao passar o mouse */
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media screen and (max-width: 768px) {
-            nav ul li {
-                margin: 0 10px;
-            }
-
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service {
-                margin: 20px 0;
-            }
-
-            form {
-                padding: 20px;
-            }
-        }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
-
 </html>
