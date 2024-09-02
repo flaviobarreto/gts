@@ -1,138 +1,238 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Switches Technology</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        .hero-bg {
-            background-image: url('https://source.unsplash.com/random/1600x900');
-            background-size: cover;
-            background-position: center;
-        }
-        /* Custom Animations */
-        .fade-in {
-            animation: fadeIn 1s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .slide-up {
-            animation: slideUp 0.75s ease-out;
-        }
-        @keyframes slideUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .scale-hover:hover {
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body class="font-sans antialiased bg-gray-100">
-
-    <!-- Header -->
-    <header class="bg-black text-white">
-        <nav class="container mx-auto flex justify-between items-center py-6">
-            <a href="#" class="text-2xl font-bold">Global Switches Technology</a>
-            <ul class="flex space-x-6">
-                <li><a href="#sobre" class="hover:text-yellow-400 transition">Sobre</a></li>
-                <li><a href="#servicos" class="hover:text-yellow-400 transition">Serviços</a></li>
-                <li><a href="#contato" class="hover:text-yellow-400 transition">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-bg text-center text-black h-screen flex items-center justify-center bg-fixed bg-cover">
-        <div class="container mx-auto px-6">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Transformando Tecnologia em Soluções</h1>
-            <p class="text-lg md:text-xl mb-8 fade-in">Implantação, Integração e Modernização de Sistemas</p>
-            <a href="#contato" class="bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition">Entre em Contato</a>
-        </div>
-    </section>
-
-    <!-- Sobre Section -->
-    <section id="sobre" class="py-20 bg-white text-center">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-4 slide-up">Sobre Nós</h2>
-            <p class="text-lg text-gray-700">A Global Switches Technology é uma startup focada em oferecer soluções de TI inovadoras. Desde a implantação e integração de APIs até a modernização de sistemas legados e microserviços, nossa missão é transformar a tecnologia em vantagens reais para o seu negócio.</p>
-        </div>
-    </section>
-
-    <!-- Serviços Section -->
-    <section id="servicos" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 slide-up">Nossos Serviços</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
-                        <div class="text-4xl mb-4 text-yellow-500">
-                            <i class="fas fa-cogs"></i>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>GST - Global Switechs Technology</title>
+      <meta name="keywords" content="tecnologia, integração de API, desenvolvimento de software, sistemas legados, sites">
+      <meta name="description" content="A Global Switechs Technology oferece serviços de integração de API, desenvolvimento de software personalizado, criação de sites e migração de sistemas legados para tecnologias modernas.">
+      <meta name="author" content="GST">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><i class="fa fa-cogs" aria-hidden="true"></i></a> <!-- Substituir logo por um ícone -->
+                              </div>
+                           </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Desenvolvimento de Sistemas</h3>
-                        <p class="text-gray-700">Criação de sistemas personalizados para atender às necessidades específicas de cada cliente.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
-                        <div class="text-4xl mb-4 text-yellow-500">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Integração de APIs</h3>
-                        <p class="text-gray-700">Integração eficiente de APIs para otimizar processos e melhorar a conectividade entre sistemas.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
-                        <div class="text-4xl mb-4 text-yellow-500">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Melhoria de Performance</h3>
-                        <p class="text-gray-700">Otimização de sistemas para garantir o melhor desempenho e eficiência operacional.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 lg:w-1/4 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg scale-hover transition-transform">
-                        <div class="text-4xl mb-4 text-yellow-500">
-                            <i class="fas fa-refresh"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Modernização de Legado</h3>
-                        <p class="text-gray-700">Atualização e modernização de sistemas legados para atender às demandas tecnológicas atuais.</p>
-                    </div>
-                </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#"> Home  </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#">Serviços</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#">Contato</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-6">
+                        <div class="text-bg">
+                           <h1>Global Switechs Technology</h1>
+                           <p>Especialistas em integração de API, desenvolvimento de software personalizado, criação de sites modernos e migração de sistemas legados para tecnologias atuais. Transformamos sua visão em soluções digitais de ponta.</p>
+                           <a href="#">Saiba Mais</a>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="text-img">
+                           <i class="fa fa-laptop fa-5x" aria-hidden="true"></i> <!-- Substituir imagem por ícone -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- business -->
+      <div class="business">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <span>Impulsione seu negócio com</span>
+                     <h2>Soluções Tecnológicas Inovadoras</h2>
+                     <p>Nossos serviços são projetados para garantir que sua empresa esteja à frente, utilizando o que há de mais moderno em tecnologia. Vamos juntos transformar desafios em oportunidades.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box">
+                           <i class="fa fa-cogs fa-3x" aria-hidden="true"></i> <!-- Substituir imagem por ícone -->
+                           <p>Na GST, acreditamos que cada projeto é único. Por isso, oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente, seja na criação de um novo site, na modernização de um sistema legado, ou na integração de APIs.</p>
+                           <a class="read_more" href="#">Leia Mais</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end business -->
+      <!-- Projects -->
+      <div class="projects">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <span>Projetos Anteriores</span>
+                     <h2>Sucesso através da Inovação</h2>
+                     <p>Estamos comprometidos em entregar projetos que não apenas atendam, mas superem as expectativas dos nossos clientes.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-6 offset-md-3">
+                        <div class="projects_box">
+                           <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i> <!-- Substituir imagem por ícone -->
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="projects_box">
+                           <p>De sistemas personalizados a integrações complexas de API, nossos projetos anteriores demonstram a profundidade do nosso conhecimento e a eficácia das nossas soluções tecnológicas.</p>
+                           <a class="read_more" href="#">Leia Mais</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end projects -->
+      <!-- Testimonial -->
+      <div class="section">
+         <div class="container">
+            <div id="" class="Testimonial">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Depoimentos</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3">
+                     <div class="Testimonial_box">
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i> <!-- Substituir imagem por ícone -->
+                     </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div class="Testimonial_box">
+                        <h4>João Silva</h4>
+                        <p>"A Global Switechs Technology superou nossas expectativas, entregando um sistema totalmente integrado e moderno. A equipe foi extremamente profissional e comprometida em cada etapa do projeto."</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <!-- end Testimonial -->
+<!-- contact -->
+<div id="contact" class="contact">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <div class="titlepage">
+               <h2>Entre em Contato</h2>
+               <span>Estamos aqui para ajudar! Escolha uma das opções abaixo para entrar em contato conosco.</span>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <div class="contact_box">
+               <a href="https://www.linkedin.com/company/gstecnologhy/" target="_blank" class="contact_icon">
+                  <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                  <h3>LinkedIn</h3>
+                  <p>Conecte-se conosco no LinkedIn</p>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end contact -->
 
-    <!-- Contato Section -->
-    <section id="contato" class="py-20 bg-white text-center">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
-            <p class="text-lg text-gray-700 mb-8">Estamos aqui para ajudar você a transformar seus desafios em oportunidades. Preencha o formulário abaixo e entraremos em contato.</p>
-            <form action="#" method="POST" class="max-w-lg mx-auto">
-                <div class="mb-4">
-                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full px-4 py-2 border rounded-lg border-gray-300">
-                </div>
-                <div class="mb-4">
-                    <input type="email" name="email" placeholder="Seu E-mail" required class="w-full px-4 py-2 border rounded-lg border-gray-300">
-                </div>
-                <div class="mb-4">
-                    <textarea name="mensagem" placeholder="Sua Mensagem" rows="4" class="w-full px-4 py-2 border rounded-lg border-gray-300"></textarea>
-                </div>
-                <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+<!-- footer -->
+<footer>
+   <div class="container">
+      <div class="row text-center">
+         <div class="col-md-12">
+            <div class="footer_left">
+               <h3>Global Switechs Technology</h3>
+               <p>Todos os direitos reservados. &copy; 2024 GST</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- end footer -->
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-6 text-center">
-        <p>&copy; 2024 Global Switches Technology. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-</body>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
 </html>
